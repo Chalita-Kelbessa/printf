@@ -45,7 +45,7 @@ int _printf(const char *format, ...)
 				{
 					char c = va_arg(arlist, int);
 
-					write(1, % c, 1);
+					write(1, &c, 1);
 					new_charpr++;
 				}
 				else if (*format == 's')
@@ -56,7 +56,7 @@ int _printf(const char *format, ...)
 					do {
 						write(1, str, strlen);
 					}
-					while (str[strlen] != '\0')
+					while (str[strlen] != '\0');
 						strlen++;
 				}
 			}
