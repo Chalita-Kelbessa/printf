@@ -34,7 +34,7 @@ Here:
 			if (v[m].id[0] == format[k] && v[m].id[1] == format[k + 1])
 			{
 				k = k + 2;
-				leng = cleng + v[m].f(xarg);
+				cleng = cleng + v[m].f(xarg);
 
 				goto Here;
 			}
